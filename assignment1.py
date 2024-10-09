@@ -13,3 +13,9 @@ Your program should ask the user for
 * The program will calculate the amount of interest earned and display it.
 * Appropriate formatting of the output is a requirement for this assignment
 """
+
+P = float(input("Initial Amount: "))
+r = float(input("Rate as a decimal: "))
+t = float(input("Time in years: "))
+I = P*r*t
+print(f"Your total interest is ${round(I,2)}.")

@@ -23,3 +23,11 @@ final balance: 1320.68
 
 """
 
+P = float(input("Initial Amount: "))
+r = float(input("Rate as a decimal: "))
+t = float(input("Time in years: "))
+for i in range(t)
+    
+    
+
+
