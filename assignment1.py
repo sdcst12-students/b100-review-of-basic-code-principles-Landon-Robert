@@ -13,3 +13,20 @@ Your program should ask the user for
 * The program will calculate the amount of interest earned and display it.
 * Appropriate formatting of the output is a requirement for this assignment
 """
+
+P = float(input("Initial Amount: "))
+r = float(input("Rate as a decimal: "))
+Unit = (input("Time unit (days, months, years, eons): "))
+if Unit == "years":
+  n = 1
+elif Unit == "months":
+  n = 12
+elif Unit == "days":
+  n = 365
+elif Unit == "eons":
+  n = 0.0000000001
+elif Unit != "days" and Unit != "months" and Unit != "years" and Unit != "eons":
+  print("That is not a valid unit")
+t = float(input("Time amount: "))
+I = P*r*t/n
+print(f"Your total interest is ${round(I,2)}.")

@@ -22,3 +22,12 @@ rate: 5%
 10 years
 final balance: 1320.68
 """
+
+A = float(input("Annual Investment: "))
+r = float(input("Rate as a decimal: "))
+t = int(input("Time in years: "))
+total = 0
+while t > 0:
+    total = total + A + (total+A)*r
+    t = t - 1
+print(f"Your total is ${round(total,2)}")
